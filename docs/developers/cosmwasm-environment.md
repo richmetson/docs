@@ -44,8 +44,8 @@ Some more useful commands we can setup:
 
 <!-- markdownlint-disable MD013 -->
 ```sh
-export NODE="--chain-id ${CHAIN_ID}"
-export TXFLAG="--chain-id ${CHAIN_ID} --gas-prices 0uwasm --gas auto --gas-adjustment 1.3"
+export NODE=tcp://localhost:26657 (or https://127.0.0.1:26657)
+export TXFLAG="--node ${NODE} --chain-id ${CHAIN_ID} --gas-prices 0uwasm --gas auto --gas-adjustment 1.3"
 ```
 <!-- markdownlint-enable MD013 -->
 
